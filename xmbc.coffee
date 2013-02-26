@@ -18,5 +18,5 @@ module.exports = (robot) ->
       .post(stringParams) (error, response, body)->
         status = JSON.parse body
         console.log(status)
-        msg.send body
+        msg.send body 
         
