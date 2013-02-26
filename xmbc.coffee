@@ -1,4 +1,12 @@
-# Configures the plugin
+# Description:
+# Control an xmbc box
+# Dependencies:
+# None
+#
+# Commands 
+# hubot xmbc toogle sound - toggle the sound of the xmbc box
+#
+# Author : Xavier Zébier
 module.exports = (robot) ->
     # waits for the string "hubot deep" to occur
    robot.respond /xbmc toggle sound/i, (msg) -> 
