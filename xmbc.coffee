@@ -25,6 +25,8 @@ module.exports = (robot) ->
       msg.http('http://192.168.1.100/jsonrpc')
       .post(stringParams) (error, response, body)->
         status = JSON.parse body
+        
         console.log(status)
-        msg.send body 
+        msg.send status.result.id 
+        
         
