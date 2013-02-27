@@ -27,6 +27,6 @@ module.exports = (robot) ->
         status = JSON.parse body
         
         console.log(status)
-        msg.send status.result.id 
+        msg.send status.result.playerid 
         
         
