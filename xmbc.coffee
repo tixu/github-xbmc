@@ -43,3 +43,5 @@ module.exports = (robot) ->
           msg.send  "Audience is  watching an #{details.type} called #{details.label}"
      	
         
+   robot.respond /xbmc tvshows list/i, (msg) ->
+          msg.send "about to list tvshow"
